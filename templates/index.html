@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+
+
+{% block body %}
+
+	<div class="container pt">
+	<div class="row mt centered">
+		<div class="col-lg-4">
+			<a href="{% url 'formation' %}" ><span class="glyphicon glyphicon-film cartouche"></span> <p>Formations</p></a>
+		</div>
+
+		<div class="col-lg-4">
+			<a href="{% url 'stat' %}" ><span class="glyphicon glyphicon-stats cartouche"></span> <p>Statistiques</p></a>
+		</div>
+
+		<div class="col-lg-4">
+			<a href="{% url 'admin' %}" ><span class="glyphicon glyphicon-wrench cartouche"></span> <p>Administration</p></a>
+		</div>
+	</div><!-- /row -->
+</div>
+
+{% endblock %}
+
+
+
+{% block script %}
+
+{% endblock %}
