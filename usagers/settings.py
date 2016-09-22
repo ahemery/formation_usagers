@@ -44,7 +44,13 @@ INSTALLED_APPS = [
     'formation',
 ]
 
-MIDDLEWARE = [
+if DEBUG is True:
+    INSTALLED_APPS += (
+        'debug_toolbar',
+    )
+
+
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
